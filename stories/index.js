@@ -17,6 +17,7 @@ import Show from "components/Appointments/Show";
 import Confirm from "components/Appointments/Confirm";
 import Status from "components/Appointments/Status";
 import Error from "components/Appointments/Error";
+import Form from "components/Appointments/Form";
 
 
 storiesOf("Button", module)
@@ -148,4 +149,36 @@ storiesOf("Appointment", module)
   .add("Show", ()=> <Show student="Lydia Miller-Jones" interviewer={interviewer} onEdit={action("onEdit")} onDelete={action("onDelete")}/>)
   .add("Confirm", ()=> <Confirm message="Delete the appointment?" onConfirm={action("onConfirm")} onCancel={action("onCancel")}/>)
   .add("Status", ()=> <Status message="Deleting"/>)
-  .add("Error", ()=> <Error message="Could not delete appointment" onClose={action("onClose")}/>);
+  .add("Error", ()=> <Error message="Could not delete appointment" onClose={action("onClose")}/>)
+  //Added setInterviewer at the end, but is this necessary? value onChange
+  .add("Form Creating", ()=> (
+    <Form 
+      interviewers={interviewers} 
+      onSave={action("onSave")} 
+      onCancel={action("onCancel")} 
+      setInterviewer={action("setInterviewer")}
+    />))
+  .add("Form Editing", ()=> (
+    <Form 
+      name="Bill Gates" 
+      interviewers={interviewers} 
+      interviewer={4} onSave={action("onSave")} 
+      onCancel={action("onCancel")} 
+      setInterviewer={action("setInterviewer")}
+    />))
+  .add("Appointment Empty", () => (
+    <Fragment>
+      <Appointment id={1} time="12pm" />
+      <Appointment id="last" time="1pm" />
+    </Fragment>
+  ))
+  .add("Appointment Booked", () => (
+    <Fragment>
+      <Appointment
+        id={1}
+        time="12pm"
+        interview={{ student: "Lydia Miller-Jones", interviewer }}
+      />
+      <Appointment id="last" time="1pm" />
+    </Fragment>
+  ))
