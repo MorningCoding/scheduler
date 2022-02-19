@@ -1,5 +1,9 @@
 # Interview Scheduler
 
+## Screenshots
+
+!["Description"](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture1.png?raw=true)
+
 ## Setup
 
 Install dependencies with `npm install`.
