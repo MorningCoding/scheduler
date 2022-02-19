@@ -4,6 +4,12 @@
 
 !["Description"](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture1.png?raw=true)
 ![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture2.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture3.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture4.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture5.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture6.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture7.png?raw=true)
+![""](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture8.png?raw=true)
 
 ## Setup
 
