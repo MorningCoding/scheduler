@@ -3,6 +3,7 @@
 ## Screenshots
 
 !["Description"](https://github.com/MorningCoding/scheduler/blob/master/docs/Picture1.png?raw=true)
+(https://github.com/MorningCoding/scheduler/blob/master/docs/Picture2.png?raw=true)
 
 ## Setup
 
